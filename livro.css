@@ -1,3 +1,98 @@
 body {
 	background: #1C1C1C;
 }
+
+header {
+	background: black;
+}
+.caixa {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 10%;
+}
+
+nav {
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+ul li {
+	color: white;
+	display: inline;
+}
+
+li {
+	text-transform: uppercase;
+	font-family: 'Staatliches', cursive;
+	margin-right: 50px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.barra-pesquisa{
+	position: absolute;
+	margin-right: 105%;
+	top: -7px;
+	right: 0;
+	background: #363636;
+	height: 30px;
+	padding: 5px;
+	border-radius: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.lupa{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.pesquisar{
+	background: none;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	width: 0;
+	transition: 0.4s;
+}
+
+.lupawhite{
+	width: 25px;
+}
+
+.lupablack{
+	display: none;
+	width: 25px;
+}
+
+.barra-pesquisa:hover > .pesquisar {
+	width: 320px;
+	padding-left: 30px;
+}
+
+.barra-pesquisa:hover > .lupa{
+	background: white;
+	height: 30px;
+	width: 30px;
+	border-radius: 40px;
+}
+
+.barra-pesquisa:hover > .lupa .lupawhite{
+	display: none;
+}
+
+.barra-pesquisa:hover > .lupa .lupablack{
+	display: block;
+}
+
+.barra-pesquisa:hover{
+	background: white;
+}
