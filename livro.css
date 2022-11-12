@@ -21,8 +21,15 @@ nav {
 	right: 0;
 }
 
-ul li {
+a {
 	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color:  #a0a0a0;
+}
+
+ul li {
 	display: inline;
 }
 
@@ -95,4 +102,8 @@ li {
 
 .barra-pesquisa:hover{
 	background: white;
+}
+
+main ul li {
+	color: white;
 }
